@@ -1,0 +1,13 @@
+<?php
+//menghitung luas segitiga
+$alas = 400 ;
+$tinggi = 150 ;
+$luas = 1/2 * $alas * $tinggi ;
+echo "luas segitiga dengan alas " .$alas. "<br>" ." dan tinggi ".$tinggi." adalah " .$luas ;
+echo "<br>" ;
+//saya sedang mempelajari rumus phytagoras
+// c2 = b2+a2
+$sisi_miring = pow($alas,2) + pow($tinggi,2) ;
+//$sisi_miring = pow($sisi_miring,2) ;
+echo "<h1>"." sisi miring segitiga dengan alas " .$alas . "cm". "<br>" . " tinggi ".$tinggi."cm"."<br>"." adalah ". round(sqrt($sisi_miring)). " desimal " . "</h1>";
+//membuat formula algoritma flowchart mengenai luas, keliling,volume yang mudah satu dan susah 1 
