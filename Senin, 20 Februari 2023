@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1><?php
+echo "PKU MUHAMADIYAH KARANGANYAR";
+?> </h1>
+<br>
+<h2>SELAMAT PAGI SOBAT MHK</h2>
+<h3><?php
+echo "Hari ini kita akan belajar Algoritma Pemgrograman bersama Pak Rohmadi";?> </h3>
+<?php
+$txt1="1.POLI UMUM<br>";
+$txt2="2.POLI DALAM<br>";
+$txt3="3.POLI BEDAH<br>";
+$txt4="4.POLI SARAF<br>";
+echo $txt1 . "" .$txt2 . "" .$txt3 . "" .$txt4;?>
+
+
+</body>
+</html>
