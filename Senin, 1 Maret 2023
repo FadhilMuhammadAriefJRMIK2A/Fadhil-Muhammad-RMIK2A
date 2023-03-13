@@ -1,0 +1,36 @@
+<?php
+//Luas persegi panjang
+echo "<h1>". "TUGAS MEMBUAT RUMUS MUDAH DAN SULIT MENGGUNAKAN PHP" . "</H1>" . "<br>" ;
+echo "----------------------------------------------------------------------------------------------------------------------------------------" . "<br>" ;
+$panjang = 4 ;
+$lebar = 5 ;
+$luas = $panjang * $lebar ; 
+
+echo "1. " . " luas persegi panjang dengan panjang " . $panjang ."cm". "<br>" . " lebar ". $lebar ."cm"." adalah ".  "....cm". "<br>" . "Jawab = " . "<br>" . 
+" Diketahui " . "<br>" . "a) Panjang persegi= " . $panjang . "cm" . "<br>" . 
+"b) Lebar persegi= " . $lebar . "cm" . "<br>" . "-Luas persegi panjang = panjang x lebar " . "<br>" . "-" . $panjang . " x " . $lebar . "=" . "<br>" . 
+"=" . $panjang * $lebar . "cm2" . "<br>" . "<br>" ;
+
+$pi= 22/7;
+$r3= 7*7*7;
+$r= 7; 
+$keliling_lingkaran= $pi * 2 * $r ;
+echo "2. Hitunglah keliling lingkaran jika diketahui jari-jarinya 7cm dengan menggunakan pi=22/7" . "<br>" . "Jawab" . "<br>". "keliling lingkaran = pi x 2 x r " . "<br>" . "= 22/7 x 2 x 7 " . "<br>" . "=" . $keliling_lingkaran . "cm" . "<br>" . "<br>" ;
+
+
+$pi= 22/7;
+$r3= 7*7*7;
+$r= 7; 
+$volume_bola= 4/3 *$pi *$r3 ;
+echo "3. Diketahui sebuah bola memilki jari-jari " . $r . "cm" . "<br>" . "maka tentukanlah volume balok tersebut(pi=22/7) ". "<br>" . "Jawab " . "<br>" . " volume bola = 3/4 . pi . r3 " . "<br>" . "= 3/4 x 22/7 x (7x7x7) " . "<br>" . "=" . $volume_bola . "cm3" . "<br>" . "<br>" ;
+
+$panjang = 4 ;
+$lebar = 5 ;
+$keliling= (2*$panjang)+(2*$lebar) ;
+echo "4. " . " hitunglah keliling persegi panjang dengan panjang " . $panjang . "cm" . "<br>" . "lebar " . $lebar . "cm" . "adalah....." . "cm" . "<br>" . "Jawab= " . "<br>" . "Diketahui" . "<br>" . "a) Panjang persegi= " . $panjang . "cm" . "<br>" . "b) Lebar persegi=" . $lebar . "cm" . "<br>" . "-Keliling persegi = 2Xpanjang + 2xlebar " . "<br>" .  "-" . "2x" . $panjang . "+" . "2x" . $lebar . "<br>" . "=" . $keliling . "cm" . "<br>" . "<br>"  ;
+
+$panjang = 4 ;
+$lebar = 5 ;
+$volume= $panjang * $lebar * $tinggi ;
+$tinggi= 5 ;
+echo "5. Diketahui sebuah balok memiliki panjang " . $panjang . "cm" .  ", lebar " . $lebar . "cm" . " dan tinggi " . $tinggi . "cm." . "<br>" . "maka tentukan volume balok tersebut ! " . "<br>" . "Jawab=" . "<br>" . "p=" . $panjang . "cm" . "<br>" . "l=" . $lebar . "cm" . "<br>" . "t=" . $tinggi . "cm" . "<br>" . "volume = p.l.t" . "<br>" . "=" . $panjang . "." . $lebar . "." . $tinggi . "<br>" . "=" . $panjang * $lebar * $tinggi . "cm3" ;
