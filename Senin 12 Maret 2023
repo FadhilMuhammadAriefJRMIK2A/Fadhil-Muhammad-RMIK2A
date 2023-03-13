@@ -1,0 +1,52 @@
+<?php
+$tanggal_lahir= strtotime("2004-07-14") ;
+$newformat= date ("Y-m-d",$tanggal_lahir) ;
+
+echo "TANGGAL HARI INI " . "<br>" . $newformat . "<br>" ;
+if ($d=="Fri") 
+echo "Have a nice weekend!"; 
+else 
+echo "Have a nice day!". "<br>" . "Umur anda saat ini " . "<br>" ;
+
+function hitung_umur($tanggal_lahir){
+	$birthDate = new DateTime($tanggal_lahir);
+	$today = new DateTime("today");
+	if ($birthDate > $today) { 
+	    exit("0 tahun 0 bulan 0 hari");
+	}
+	$y = $today->diff($birthDate)->y;
+	$m = $today->diff($birthDate)->m;
+	$d = $today->diff($birthDate)->d;
+	return $y." tahun ".$m." bulan ".$d." hari";
+}
+
+echo hitung_umur("2004-07-14") . "<br>" ;
+
+function getDay($date){
+ $convert=gmdate($date,time()+60*60*8);
+ $pecah=explode("-",$convert);
+ $tgl=$pecah[2];
+ $bln=$pecah[1];
+ $thn=$pecah[0];
+ $day=date("l",mktime(0,0,0,$bln,$tgl,$thn));
+ return $day;
+}
+
+
+$date= $tanggal_lahir;
+echo getDay($date). "<br>" ;
+
+if ($date=="Tuesday")
+echo "Minggu" ;
+elseif ($tanggal_lahir=="Monday")
+echo "Senin" ;
+elseif ($tanggal_lahur=="Tuesday")
+echo "Selasa" ;
+elseif ($tanggal_lahir=="Wednesday")
+echo "Rabu" ;
+elseif ($tanggal_lahur=="Thursday")
+echo "Kamis" ;
+elseif ($tanggal_lahir=="Friday")
+echo "Jumat" ;
+elseif ($tanggal_lahur=="Saturday")
+echo "Sabtu" ;
